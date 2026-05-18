@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(to right, #800020, #5c0013);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #800020;
+}
+
+#emojiDisplay {
+    font-size: 70px;
+    margin: 20px 0;
+}
+
+#responseText {
+    font-size: 18px;
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #800020;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #a00030;
+    transform: scale(1.1);
+}
+
+/* Animations */
+
+.bounce {
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-25px); }
+    100% { transform: translateY(0); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-12px); }
+    75% { transform: translateX(12px); }
+}
+
+.pulse {
+    animation: pulse 0.7s;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.4); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+.spin {
+    animation: spin 0.7s;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
